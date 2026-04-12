@@ -12,7 +12,7 @@ SKILLS=(
     "test-driven-development"
     "writing-plans"
     "dispatching-parallel-agents"
-    "executing-plans"
+    "subagent-driven-development"
     "requesting-code-review"
 )
 

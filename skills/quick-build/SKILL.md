@@ -3,37 +3,25 @@ name: quick-build
 description: "You MUST use this before building small features or making quick changes. A lightweight brainstorming variant: explore context, clarify intent, present design, then go straight to TodoWrite and execute — no formal spec or writing-plans step."
 ---
 
-# Quick Build
+# Brainstorming Ideas Into Designs
 
-A lightweight version of brainstorming for small features and quick changes. Retains the core design-thinking flow but skips formal documentation and planning steps, going straight to TodoWrite and execution after design approval.
+Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
 
-## When to Use
-
-- Small feature additions (new button, config flag, minor UI change)
-- Quick bug fixes that need design consideration
-- Single-file or few-file changes
-- Changes where the scope is clear after a brief discussion
-
-## When NOT to Use
-
-- Multi-subsystem features (use brainstorming instead)
-- Changes requiring formal documentation for compliance
-- Architectural decisions that affect multiple teams
-- Changes that need stakeholder review
+Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the design and get user approval.
 
 <HARD-GATE>
-Do NOT write any code or take implementation action until you have presented a design and the user has approved it. Even for "simple" changes, you MUST go through this process.
+Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user has approved it. This applies to EVERY project regardless of perceived simplicity.
 </HARD-GATE>
 
-## Anti-Pattern: "This Is Too Simple To Need Design"
+## Anti-Pattern: "This Is Too Simple To Need A Design"
 
-Small changes are where unexamined assumptions cause the most wasted work. The design can be a few sentences, but you MUST present it and get approval.
+Every project goes through this process. A todo list, a single-function utility, a config change — all of them. "Simple" projects are where unexamined assumptions cause the most wasted work. The design can be short (a few sentences for truly simple projects), but you MUST present it and get approval.
 
 ## Checklist
 
 You MUST create a task for each of these items and complete them in order:
 
-1. **Explore project context** — check relevant files, recent changes
+1. **Explore project context** — check files, docs, recent commits
 2. **Ask clarifying questions** — one at a time, understand purpose/constraints/success criteria
 3. **Propose 2-3 approaches** — with trade-offs and your recommendation
 4. **Present design** — in sections scaled to their complexity, get user approval after each section
@@ -112,9 +100,11 @@ Once the user approves the design:
 ## Key Principles
 
 - **One question at a time** - Don't overwhelm with multiple questions
-- **Multiple choice preferred** - Easier to answer when possible
-- **YAGNI ruthlessly** - Remove unnecessary features
-- **Explore alternatives** - Always propose 2-3 approaches
-- **Incremental validation** - Present design, get approval before coding
+- **Multiple choice preferred** - Easier to answer than open-ended when possible
+- **YAGNI ruthlessly** - Remove unnecessary features from all designs
+- **Explore alternatives** - Always propose 2-3 approaches before settling
+- **Incremental validation** - Present design, get approval before moving on
+- **Be flexible** - Go back and clarify when something doesn't make sense
 - **No formal docs** - Skip spec writing, rely on verbal confirmation
 - **Go straight to TodoWrite** - No writing-plans step
+
